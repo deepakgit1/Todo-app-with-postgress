@@ -4,5 +4,6 @@ export class CreateTodoDto {
     title:string;
     task:string;
     userId:number;
-    token:string
+    token:string;
+    time:string;
 }

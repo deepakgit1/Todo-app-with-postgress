@@ -17,9 +17,13 @@ export class TodosService {
     const tkn = data.token
     const userId = await this.jwtService1.verify(tkn)
     console.log(userId)
+    const time = new Date().toDateString()
+    console.log(time);
+    
     const nData ={
       ...data,
-      userId:Number(userId.id)
+      userId:Number(userId.id),
+      time
     }
     return this.todoRepository.save(nData)
   }

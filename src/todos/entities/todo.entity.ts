@@ -13,4 +13,8 @@ export class Todo {
 
     @Column()
     userId:number
+
+    @Column()
+    time:string;
+
 }
