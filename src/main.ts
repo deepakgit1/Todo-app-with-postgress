@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule,{cors:true});
-  const port = 4000 || "https://todo-app-backend-server.herokuapp.com/"
+  const port = "https://todo-app-backend-server.herokuapp.com/" || 4000
   await app.listen(port);
 }
 bootstrap();
